@@ -34,7 +34,7 @@ tracker = "https://github.com/AmanoTeam/python-anilist/issues"
 source = "https://github.com/AmanoTeam/python-anilist"
 
 [tool.setuptools.package-data]
-anilist = ["py.typed", "*.graphql"]
+anilist = ["py.typed", "queries/_query_files/*/*.graphql"]
 
 [tool.rye]
 dev-dependencies = [
