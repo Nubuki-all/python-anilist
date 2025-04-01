@@ -14,16 +14,9 @@ class Title(Object):
     def __init__(
         self,
         *,
-        romaji: str,
-        english: str,
-        native: str,
+        **kwargs,
     ):
-        if romaji:
-            self.romaji = romaji
-        if english:
-            self.english = english
-        if native:
-            self.native = native
+        self.__dict__.update(kwargs)
 
     def __eq__(self, other) -> bool:
         if isinstance(other, self.__class__):
